@@ -8,20 +8,19 @@
   </head>
   <body>
     <header>
-      <h1> Microinteractions - IDM241</h1>
+      <h1> 
+        Microinteractions - IDM241
+      </h1>
+      <a class="button" style="position: center;"type="button" href="https://drexel.edu/equity-inclusive-culture/" target="_blank">
+        Visit Original Interface
+      </a>
     </header>
-    <div> <!--info section-->
-      <div id="button">
-        <a type="button" href="https://drexel.edu/equity-inclusive-culture/" target="_blank">
-          Visit Original Interface
-        </a>
-      </div>
-      <div>
-        <h2>
-          Information
-        </h2>
-      </div>
-      <div>
+
+    <div id="mid-section"> <!--info section-->
+      <h2>
+        Alpha - Information
+      </h2>
+      <div id="info-content">
         <!--Trigger List-->
         <section>
           <h3>Trigger</h3>
@@ -35,24 +34,22 @@
           <ul>
             <li>Overlay color #000637 with Transparency from 75% to 90% transition-duration 3s.</li>
             <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned, transitions from bottom left at 55% Transparency to center left at 100% over a duration of 3 seconds. </li>
-            <li></li>
+            <li>Learn more button (shape: rectangle with 33% rounded edge, color:#FFC915, font-style: futura, light condense, black, font-size: 35, line-height: 60, letter-space: 5%)  transparency changes from 65% to 100% over 3 seconds with a white drop shadow (x:0, y:4, blur:4, spread:0, transparency:55%).  </li>
+            <li> Slide Number Indicator (shape: rectangle with 33% rounded edge; color:#000637; height: 29px; width:165px;) located at bottom right of slide with 5 #FFC915 colored 2px stroke circles center aligned, with one circle filled with #FFC915, indicating slide number. </li>
           </ul>
           <bold>Backend</bold>
           <ul>
             <li>
-              The arrow clicking notifies a database that a specific
-              image is selected and the database displays the proper
-              event detail and "learn more" link
+              System needs to provide database with slide number and then can retrieve the slide details with the learn more link.
             </li>
           </ul>
         </section>
         <section>
           <h3>Feedback</h3>
           <ul>
-            <li>Arrow box becomes transparent</li>
-            <li>Next image displays</li>
-            <li>The slide indication circle (bottom right) moves to the next position, indicating that this is the next slide </li>
-            <li>Image/event detail text changes based on image</li>
+            <li>Dark blue overlay with synchronized text fade in</li>
+            <li>Learn more button fade in a few seconds after text positions in center of slide</li>
+            <li>Slide Number Indicator located at the bottom letting user know they are on third slide</li>
           </ul>
         </section>
         <section>
@@ -61,14 +58,19 @@
             <li>None</li>
           </ul>
         </section>
-        <div>Loops and Modes</div>
       </div>
-
     </div>
-    <div> <!---Images-->
-      <h2>
-        Images
-      </h2>
+    <div > <!---Images-->
+      <h2>Alpha - Images</h2>
+      <div id="img-content">
+        <img  src="imgs/alpha_1.png" alt="screen 1" width="440px" height="200px">
+        <img  src="imgs/alpha_2.png" alt="screen 2" width="440px" height="200px">
+        <img  src="imgs/alpha_4.png" alt="screen 4" width="440px" height="200px">
+        <img  src="imgs/alpha_5.png" alt="screen 5" width="440px" height="200px">
+      </div>
     </div>
+    <footer>
+      <p>Author: Samiha Shoshi</p>
+    </footer>
   </body>
 </html>
