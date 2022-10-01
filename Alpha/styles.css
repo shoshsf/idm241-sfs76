@@ -1,33 +1,3 @@
-/*small/medium devices*/
-@media(max-width: 768px){ 
-    .button{
-       background-color: #002f6c;
-       border-radius: 25px;
-       color:#ffc915;
-       margin-top: 15px;
-       margin-bottom: 20px;
-       padding: 15px 40px;
-   }
-   h3{
-       font-size: 18px;
-   }
-   li{
-    font-size: 18px;
-    line-height: 25px;
-    }
-   section{
-       border-color: #002f6c;
-       border-width: 3px;
-       border-style: solid;
-       border-radius: 10px;
-       margin: 10px;
-       padding: 0 16px;  
-   }
-   .button:active{
-       background-color: #265696;
-       box-shadow: 0 3px #0118359a;
-   }
-}
 
 /*general*/
 html{
@@ -112,5 +82,37 @@ section{
     padding: 4px 25px 8px;
     
 }
+
+/*small/medium devices*/
+@media(max-width: 768px){ 
+    .button{
+       background-color: #002f6c;
+       border-radius: 25px;
+       color:#ffc915;
+       margin-top: 15px;
+       margin-bottom: 20px;
+       padding: 15px 40px;
+   }
+   h3{
+       font-size: 18px;
+   }
+   li{
+    font-size: 18px;
+    line-height: 25px;
+    }
+   section{
+       border-color: #002f6c;
+       border-width: 3px;
+       border-style: solid;
+       border-radius: 10px;
+       margin: 10px;
+       padding: 0 16px;  
+   }
+   .button:active{
+       background-color: #265696;
+       box-shadow: 0 3px #0118359a;
+   }
+}
+
 
 
