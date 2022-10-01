@@ -1,3 +1,35 @@
+/*small/medium devices*/
+@media(max-width: 768px){ 
+    .button{
+       background-color: #002f6c;
+       border-radius: 25px;
+       color:#ffc915;
+       margin-top: 15px;
+       margin-bottom: 20px;
+       padding: 15px 40px;
+   }
+   h3{
+       font-size: 18px;
+   }
+   li{
+    font-size: 18px;
+    line-height: 25px;
+    }
+   section{
+       border-color: #002f6c;
+       border-width: 3px;
+       border-style: solid;
+       border-radius: 10px;
+       margin: 10px;
+       padding: 0 16px;  
+   }
+   .button:active{
+       background-color: #265696;
+       box-shadow: 0 3px #0118359a;
+   }
+}
+
+/*general*/
 html{
     display: flex;
 }
@@ -17,15 +49,21 @@ body{
     background-color: #002f6c;
     border-radius: 25px;
     color:#ffc915;
+    font-size: 17px;
     margin-top: 10px;
     margin-bottom: 15px;
     padding: 15px 40px;
 
 }
 
+.button:hover{
+    background-color: #265696;
+    box-shadow: 0 3px #0118359a;
+}
+
 footer{
     font-size: 20px;
-    padding:8px 0 15px 0;
+    padding: 8px 0 15px 0;
     text-align: center;
 }
 
@@ -43,11 +81,14 @@ h2{
     
     color: #002f6c;
     font-size: 20px;
-    text-decoration: underline;
 }
 h3{
-    font-size: 16px;
+    font-size: 18px;
 }
+h4{
+    margin-left: 16px;
+}
+
 
 #info-section{
     display: block;
@@ -55,9 +96,10 @@ h3{
  
 li{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
+    font-size: 18px;
     margin-top:-10px;
     padding-top: 15px;
+    line-height: 20px;
 
 }
 
@@ -67,7 +109,8 @@ section{
     border-style: solid;
     border-radius: 10px;
     margin: 10px;
-    padding: 3px;
+    padding: 4px 25px 8px;
     
 }
+
 
