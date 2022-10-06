@@ -31,12 +31,19 @@
         <section>
           <h3>Rules</h3>
           <h4>Frontend</h4>
-          <ul>
-            <li>Overlay color #000637 with Transparency from 75% to 90% transition-duration 3 seconds.</li>
-            <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned, transitions from bottom left at 55% Transparency to center left at 100% over a duration of 3 seconds. </li>
-            <li>Learn more button (shape: rectangle with 33% rounded edge, color:#FFC915, font-style: futura, light condense, black, font-size: 35, line-height: 60, letter-space: 5%)  transparency changes from 65% to 100% over 3 seconds with a white drop shadow (x:0, y:4, blur:4, spread:0, transparency:55%).  </li>
-            <li> Slide Number Indicator (shape: rectangle with 33% rounded edge; color:#000637; height: 29px; width:165px;) located at bottom right of slide with 5 #FFC915 colored 2px stroke circles center aligned, with one circle filled with #FFC915, indicating slide number. </li>
-          </ul>
+           <h5> Hover On Slideshow</h5>
+            <ul>
+              <li>Overlay color #000637 with Transparency from 75% to 90% transition-duration 3 seconds.</li>
+              <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned, transitions from bottom left at 55% Transparency to center left at 100% over a duration of 3 seconds. </li>
+              <li>Learn more button (shape: rectangle with 33% rounded edge, color:#FFC915, font-style: futura, light condense, black, font-size: 35, line-height: 60, letter-space: 5%)  transparency changes from 65% to 100% over 3 seconds with a white drop shadow (x:0, y:4, blur:4, spread:0, transparency:55%).  </li>
+              <li>Slide Number Indicator (shape: rectangle with 33% rounded edge; color:#000637; height: 29px; width:165px;) located at bottom right of slide with 5 #FFC915 colored 2px stroke circles center aligned, with one circle filled with #FFC915, indicating slide number. </li>
+            </ul>
+            <h5>Hover Off Slideshow</h5>
+            <ul>
+              <li>Overlay color #000637 with Transparency from 90% to 75% to 0% transition-duration between each percent is 3 .</li>
+              <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned, transitions from center left with a 100% tranparancy to 55% to 0% with a duration of 3 seconds between percents (synchronized with overlay transition) </li>
+              <li>Learn more button (shape: rectangle with 33% rounded edge, color: #FFC915, font-style: futura, light condense, black, font-size: 35, line-height: 60, letter-space: 5%)  transparency changes from 100% to 55% to 0% over 3 seconds between percents.  </li>
+            </ul>
           <h4>Backend</h4>
           <ul>
             <li>
@@ -47,8 +54,8 @@
         <section>
           <h3>Feedback</h3>
           <ul>
-            <li>Dark blue overlay with synchronized text fade in</li>
-            <li>Learn more button fade in a few seconds after text positions in center of slide</li>
+            <li>Dark blue overlay with synchronized text fade in when hover on and fades out with hover off.</li>
+            <li>Learn more button fades in a few seconds after text positions in center of slide with hover in, and learn more button will fade out in synchronous with the text </li>
             <li>Slide Number Indicator located at the bottom letting user know they are on third slide</li>
           </ul>
         </section>
@@ -62,15 +69,27 @@
     </div>
     <div > <!---Images-->
       <h2>Alpha - Images</h2>
-      <div id="img-content">
-        <img  src="imgs/alpha_1.png" alt="screen 1" width="440px" height="200px">
-        <img  src="imgs/alpha_2.png" alt="screen 2" width="440px" height="200px">
-        <img  src="imgs/alpha_4.png" alt="screen 4" width="440px" height="200px">
-        <img  src="imgs/alpha_5.png" alt="screen 5" width="440px" height="200px">
+      <div id="img_section">
+        <section>
+          <h3>Hover On</h3>
+          <div id="img_content">
+            <img  src="imgs/alpha_1.png" alt="screen 1" width="440px" height="200px">
+            <img  src="imgs/alpha_2.png" alt="screen 2" width="440px" height="200px">
+            <img  src="imgs/alpha_4.png" alt="screen 4" width="440px" height="200px">
+            <img  src="imgs/alpha_5.png" alt="screen 5" width="440px" height="200px">
+          </div>
+        </section>
+        <section>
+          <h3>Hover Off</h3>
+          <div id="img_content">
+            <img  src="imgs/alpha_6.png" alt="screen 6" width="440px" height="200px">
+            <img  src="imgs/alpha_1.png" alt="screen 1" width="440px" height="200px">
+          </div>
+        </section>
       </div>
     </div>
     <footer>
-      <p>Author: Samiha Shoshi</p>
+      <p>@Samiha Shoshi 2022</p>
     </footer>
   </body>
 </html>
