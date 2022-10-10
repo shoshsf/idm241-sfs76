@@ -3,75 +3,272 @@
    border-color: red;
    border-style: solid;
 }
+
+
 body{
-  margin: 40px 30px 30px;
+  background-color:white;
+  font-family: 'futura';
+  font-size: 18px;
+  font-style: normal;
+  letter-spacing: 5%;
+  padding: 0 40px;
+}
+
+footer{
+  font-size: 20px;
+  margin: 0 -15px;
+  padding: 8px 0;
+  text-align: center;
+  color:#002f6c;
+}
+
+
+header{
+  color:#002f6c;
+  text-align: center;
+  padding:5px 10px ;
+}
+
+ h1{
+  padding-bottom: 13px;
+ 
+}
+
+h2{
+  color: #002f6c;
+  font-size: 20px;
+}
+ h3{
   font-size: 18px;
 }
-
-#display{
-
+ h4{
+  margin-left: 16px;
 }
 
-/* to center display image */
-.center {
+h5{
+  margin-left: 24px;
+}
+
+#info-section{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
-.container {
-  position: relative;
-  width: 880px;
-  height: 400px;
+li{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin-top:-10px;
+  padding-top: 15px;
+  line-height: 20px;
+
 }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #000738e8; /*blue overlay with opacity*/
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .3s ease;
+section{
+  border-color: #002f6c;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 4px 25px 8px;
+  
 }
 
-.container:hover .overlay {
-  height: 100%;
-}
 
-.slideText {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-}
-.text{
-    font-size: 35px;
-    font-family:'Futura Std Condensed Light';
-    color: #ffffff;
-    line-height: 60px;
-    letter-spacing: 5%;
-    text-align: left;
-}
-.button{
-    border-radius: 20px;
-    border-style: solid;
-    border-color: white;
-    background-color: #ffc915;
-    font-family: futura;
-    color: black;
-    font-size: 20px;
-    padding: 10px 30px;
-    line-height: 60px;
-    letter-spacing: 0.8px;
-    opacity: 100%;
-    text-decoration: none;
-}
+/*For Image Display*/
 
-.button:hover{
-    background-color: #ffdf75;
-    box-shadow: 0 3px #ffffffc5;
+
+  /* to center display image */
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    position: relative;
+    width: 880px;
+    height: 400px;
+    cursor: default;
+  }
+    
+/*Display specifics*/
+  /* animation specifics*/
+      /*Fade in and out animation*/
+      @keyframes fade-in {
+        from {opacity: 45%}
+        to {opacity: 100%}
+      }
+      @keyframes fade-out {
+        from {opacity: 100%}
+        to {opacity: 0%}
+      }
+      /*--------------------------*/
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #000738e8;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 1.8s ease;
+      animation-name: fade-out;
+      animation-duration: 1.8s;
+    }
+
+    .container:hover .overlay {
+      height: 100%;
+      cursor: pointer;
+      animation-name: fade-in;
+      animation-duration: 2s;
+    }
+   /*------------------*/
+
+
+  .slideText {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .text{
+      font-size: 35px;
+      font-family:'Futura Std Condensed Light';
+      color: #ffffff;
+      line-height: 60px;
+      letter-spacing: 5%;
+      text-align: left;
+  }
+
+  .button{
+      border-radius: 20px;
+      border-style: solid;
+      border-color: white;
+      background-color: #ffc915;
+      font-family: futura;
+      color: black;
+      font-size: 20px;
+      padding: 10px 30px;
+      line-height: 60px;
+      letter-spacing: 0.8px;
+      opacity: 100%;
+      text-decoration: none;
+  }
+
+  .button:hover{
+      background-color: #ffdf75;
+      box-shadow: 0 3px #ffffffc5;
+  }
+ /*-----------------------------*/
+/*---------------------*/
+
+/**/
+/*small/medium devices*/
+@media(max-width: 1000px){
+  html{
+    display:flex;
+  }
+  
+  body{
+    display:block;
+  } 
+ h3{
+     font-size: 18px;
+ }
+ h4{
+  font-size: 16px;
+ }
+ h5{
+  font-size: 14px;
+ }
+ li{
+  font-size: 18px;
+  line-height: 25px;
+  }
+ section{
+     border-color: #002f6c;
+     border-width: 3px;
+     border-style: solid;
+     border-radius: 10px;
+     margin: 10px;
+     padding: 0 16px;  
+ }
+
+ /*For Image Display*/
+  .container {
+    position: relative;
+    width:auto;
+    height: auto;
+    cursor: default;
+  }
+    
+/*Display specifics*/
+  /* animation specifics*/
+      /*Fade in and out animation*/
+      @keyframes fade-in {
+        from {opacity: 45%}
+        to {opacity: 100%}
+      }
+      @keyframes fade-out {
+        from {opacity: 100%}
+        to {opacity: 0%}
+      }
+      /*--------------------------*/
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #000738e8;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 1.8s ease;
+      animation-name: fade-out;
+      animation-duration: 1.8s;
+    }
+
+    .container:hover .overlay {
+      height: 100%;
+      cursor: pointer;
+      animation-name: fade-in;
+      animation-duration: 2s;
+    }
+   /*------------------*/
+
+
+  .slideText {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .text{
+      font-size: 35px;
+      font-family:'Futura Std Condensed Light';
+      color: #ffffff;
+      line-height: 60px;
+      letter-spacing: 5%;
+      text-align: left;
+  }
+
+  .button{
+      border-radius: 20px;
+      border-style: solid;
+      border-color: white;
+      background-color: #ffc915;
+      font-family: futura;
+      color: black;
+      font-size: 20px;
+      padding: 10px 30px;
+      line-height: 60px;
+      letter-spacing: 0.8px;
+      opacity: 100%;
+      text-decoration: none;
+  }
+
+  .button:hover{
+      background-color: #ffdf75;
+      box-shadow: 0 3px #ffffffc5;
+  }
 }

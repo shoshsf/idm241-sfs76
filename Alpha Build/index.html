@@ -10,7 +10,15 @@
 
 
   <body>
-    <div id="display" >
+    <header>
+      <h1> 
+        Microinteractions - IDM241
+      </h1>
+      <!--<h2>Alpha Build</h2>-->
+    </header>
+
+
+    <div id="display">
       <div class="container center">
         <img src="imgs/ARTF-hands3.jpg" alt="Slide1" class="image" >
         <div class="overlay">
@@ -22,52 +30,104 @@
         </div>
       </div>
     </div>
-    <div id="info-content">
-      <!--Trigger List-->
-      <section>
-        <h3>Trigger</h3>
-        <ul>
-          <li>Hover over Slideshow </li>
-        </ul>
-      </section>
-      <section>
-        <h3>Rules</h3>
-        <h4>Frontend</h4>
-          <h5> Hover On Slideshow</h5>
+
+
+    <div id="mid-section"> <!--info section-->
+      <h2>
+        Alpha Build - Information
+      </h2>
+      <div id="info-content">
+        <!--Trigger List-->
+        <section>
+          <h3>Trigger</h3>
           <ul>
-            <li>Overlay color #000637 with Transparency from 75% to 90% transition-duration 3 seconds.</li>
-            <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned, transitions from bottom left at 55% Transparency to center left at 100% over a duration of 3 seconds. </li>
-            <li>Learn more button (shape: rectangle with 33% rounded edge, color:#FFC915, font-style: futura, light condense, black, font-size: 35, line-height: 60, letter-space: 5%)  transparency changes from 65% to 100% over 3 seconds with a white drop shadow (x:0, y:4, blur:4, spread:0, transparency:55%).  </li>
-            <li>Slide Number Indicator (shape: rectangle with 33% rounded edge; color:#000637; height: 29px; width:165px;) located at bottom right of slide with 5 #FFC915 colored 2px stroke circles center aligned, with one circle filled with #FFC915, indicating slide number. </li>
+            <li>Hover On/Off Image </li>
           </ul>
-          <h5>Hover Off Slideshow</h5>
+        </section>
+        <section>
+          <h3>Rules</h3>
+          <h4>Frontend</h4>
+           <h5> Hover On Slideshow</h5>
+              <ul>
+                <li>Modal</li>
+                  <ul>
+                    <li>color #000738 with Transparency 80% opacity </li>
+                    <li>Ease in from bottom to top with a transition-duration of 1.8s seconds</li>
+                    <li>Fades in with Opacity at 45% to 100% with an animation duration of 2 seconds</li>
+                  </ul>
+                <li>Cursor</li>
+                  <ul>
+                    <li>Changes to Pointer</li>
+                  </ul>
+                <li>Text</li>  
+                  <ul>
+                    <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned</li>
+                    <li>Fade in from Opacity 45% to 100% </li>
+                    <li>Ease in (in sync with modal) from the bottom of the image to top.</li>
+                  </ul>        
+                <li>Learn more button </li>
+                  <ul>
+                    <li>Rectangle with border radius: 20px, style: solid, color: #ffffff</li>
+                    <li>Background-color of #ffc915</li>
+                    <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li>
+                    <li>Fade in from Opacity 45% to 100% </li>
+                    <li>Ease in (in sync with modal) from the bottom of the image to top.</li>
+                  </ul>
+              </ul>
+            <h5>Hover Off Slideshow</h5>
+            <ul>
+              <li>Modal</li>
+                <ul>
+                  <li>color #000738 with Transparency 80% opacity </li>
+                  <li>Ease out from top to bottom with a transition-duration of 1.8 seconds</li>
+                  <li>Fades out with Opacity at 100% to 0% with an animation duration of 1.8 seconds</li>
+                </ul>
+              <li>Cursor</li>
+                <ul>
+                  <li>Changes to Default</li>
+                </ul>
+              <li>Text</li>  
+                <ul>
+                  <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned</li>
+                  <li>Fade out from Opacity 100% to 0%</li>
+                  <li>Ease out (in sync with modal) from the top of the image to the bottom</li>
+                </ul>        
+              <li>Learn more button </li>
+                <ul>
+                  <li>Rectangle with border radius: 20px, style: solid, color: #ffffff</li>
+                  <li>Background-color of #ffc915</li>
+                  <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li>
+                  <li>Fade out from Opacity 100% to 0%</li>
+                  <li>Ease out (in sync with modal) from the top of the image to the bottom</li>
+                </ul>
+            </ul>
+          
+          <h4>Backend</h4>
           <ul>
-            <li>Overlay color #000637 with Transparency from 90% to 75% to 0% transition-duration between each percent is 3 .</li>
-            <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned, transitions from center left with a 100% tranparancy to 55% to 0% with a duration of 3 seconds between percents (synchronized with overlay transition) </li>
-            <li>Learn more button (shape: rectangle with 33% rounded edge, color: #FFC915, font-style: futura, light condense, black, font-size: 35, line-height: 60, letter-space: 5%)  transparency changes from 100% to 55% to 0% over 3 seconds between percents.  </li>
+            <li>
+              None
+            </li>
           </ul>
-        <h4>Backend</h4>
-        <ul>
-          <li>
-            System needs to provide database with slide number and then can retrieve the slide details with the learn more link.
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h3>Feedback</h3>
-        <ul>
-          <li>Dark blue overlay with synchronized text fade in when hover on and fades out with hover off.</li>
-          <li>Learn more button fades in a few seconds after text positions in center of slide with hover in, and learn more button will fade out in synchronous with the text </li>
-          <li>Slide Number Indicator located at the bottom letting user know they are on third slide</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Loops/mode</h3>
-        <ul>
-          <li>None</li>
-        </ul>
-      </section>
+        </section>
+        <section>
+          <h3>Feedback</h3>
+            <ul>
+              <li>Dark blue overlay with text and learn more button slides in with a nice fade from the bottom when hover on.</li>
+              <li>Dark blue overlay, text and learn more button fades and slides out from top to bottom when hover off. </li>
+            </ul>
+        </section>
+        <section>
+          <h3>Loops/mode</h3>
+          <ul>
+            <li>None</li>
+          </ul>
+        </section>
+      </div>
     </div>
+
+    <footer>
+      <p>@Samiha Shoshi 2022</p>
+    </footer>
   </body>
 
 
