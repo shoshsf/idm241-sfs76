@@ -1,0 +1,61 @@
+*{
+   border-width: 1px;
+   border-color: red;
+   border-style: solid;
+}
+
+.container {
+  position: relative;
+  width: 880px;
+  height: 400px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000738e8; /*blue overlay with opacity*/
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.slideText {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.text{
+    font-size: 35px;
+    font-family:'Futura Std Condensed Light';
+    color: #ffffff;
+    line-height: 60px;
+    letter-spacing: 5%;
+    text-align: left;
+}
+.button{
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    background-color: #ffc915;
+    font-family: futura;
+    color: black;
+    font-size: 20px;
+    padding: 10px 30px;
+    line-height: 60px;
+    letter-spacing: 0.8px;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #ffdf75;
+    box-shadow: 0 3px #ffffffc5;
+}
