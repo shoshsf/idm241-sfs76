@@ -1,10 +1,9 @@
-/*
+
 *{
    border-width: 1px;
    border-color: red;
    border-style: solid;
 }
-*/
 
 body{
   background-color:white;
@@ -21,6 +20,10 @@ footer{
   padding: 8px 0;
   text-align: center;
   color:#002f6c;
+}
+.footer-text{
+  font-size: 16px;
+  font-weight: normal;
 }
 
 
@@ -86,10 +89,21 @@ section{
 
   .container {
     position: relative;
-    width: 880px;
-    height: 400px;
+     width: 880px;
+    height: 400px; 
     cursor: default;
   }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+/* 
+  #slideshow{
+    max-width: 880px;
+    margin: 0 auto;
+
+  } */
     
 /*Display specifics*/
   /* animation specifics*/
@@ -112,16 +126,16 @@ section{
       overflow: hidden;
       width: 100%;
       height: 0;
-      transition: 1.8s ease;
+      transition: 0.8s ease;
       animation-name: fade-out;
-      animation-duration: 1.8s;
+      animation-duration: 0.8s;
     }
 
     .container:hover .overlay {
       height: 100%;
       cursor: pointer;
       animation-name: fade-in;
-      animation-duration: 2s;
+      animation-duration: 1s;
     }
    /*------------------*/
 
@@ -164,8 +178,8 @@ section{
 /*---------------------*/
 
 /**/
-/*small/medium devices*/
-@media(max-width: 1000px){
+
+@media screen and (max-width: 1000px){
   html{
     display:flex;
   }
@@ -196,80 +210,116 @@ section{
  }
 
  /*For Image Display*/
-  .container {
-    position: relative;
-    width:auto;
-    height: auto;
-    cursor: default;
-  }
-    
+ .container {
+  position: relative;
+  width: auto;
+  height: auto;
+  cursor: default;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+  
 /*Display specifics*/
-  /* animation specifics*/
-      /*Fade in and out animation*/
-      @keyframes fade-in {
-        from {opacity: 45%}
-        to {opacity: 100%}
-      }
-      @keyframes fade-out {
-        from {opacity: 100%}
-        to {opacity: 0%}
-      }
-      /*--------------------------*/
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: #000738e8;
-      overflow: hidden;
-      width: 100%;
-      height: 0;
-      transition: 1.8s ease;
-      animation-name: fade-out;
-      animation-duration: 1.8s;
+/* animation specifics*/
+    /*Fade in and out animation*/
+    @keyframes fade-in {
+      from {opacity: 45%}
+      to {opacity: 100%}
     }
-
-    .container:hover .overlay {
-      height: 100%;
-      cursor: pointer;
-      animation-name: fade-in;
-      animation-duration: 2s;
+    @keyframes fade-out {
+      from {opacity: 100%}
+      to {opacity: 0%}
     }
-   /*------------------*/
-
-
-  .slideText {
+    /*--------------------------*/
+  .overlay {
     position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000738e8;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 1.8s ease;
+    animation-name: fade-out;
+    animation-duration: 1.8s;
   }
+
+  .container:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+    animation-name: fade-in;
+    animation-duration: 2s;
+  }
+ /*------------------*/
+
+
+.slideText {
+  /* position: absolute; */
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.text{
+    font-size: 1.5em;
+    font-family:'Futura Std Condensed Light';
+    color: #ffffff;
+    line-height: 60px;
+    letter-spacing: 5%;
+    text-align: left;
+}
+
+.button{
+    border-radius: 1em;
+    border-style: solid;
+    border-color: white;
+    background-color: #ffc915;
+    font-family: futura;
+    color: black;
+    font-size: 1em;
+    padding: 10px 30px;
+    line-height: 60px;
+    letter-spacing: 0.8px;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #ffdf75;
+    box-shadow: 0 3px #ffffffc5;
+}
+} 
+
+@media (max-width:675px) {
   .text{
-      font-size: 35px;
-      font-family:'Futura Std Condensed Light';
-      color: #ffffff;
-      line-height: 60px;
-      letter-spacing: 5%;
-      text-align: left;
-  }
+    font-size: 16px;
+    font-family:'Futura Std Condensed Light';
+    color: #ffffff;
+    line-height: 30px;
+    letter-spacing: 5%;
+    text-align: left;
+}
 
-  .button{
-      border-radius: 20px;
-      border-style: solid;
-      border-color: white;
-      background-color: #ffc915;
-      font-family: futura;
-      color: black;
-      font-size: 20px;
-      padding: 10px 30px;
-      line-height: 60px;
-      letter-spacing: 0.8px;
-      opacity: 100%;
-      text-decoration: none;
-  }
+.button{
+  border-radius: 16px;
+  border-style: solid;
+  border-color: white;
+  background-color: #ffc915;
+  font-family: futura;
+  color: black;
+  font-size: 16px;
+  padding: 10px 30px;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  opacity: 100%;
+  text-decoration: none;
+}
 
-  .button:hover{
-      background-color: #ffdf75;
-      box-shadow: 0 3px #ffffffc5;
-  }
+.button:hover{
+  background-color: #ffdf75;
+  box-shadow: 0 3px #ffffffc5;
+}
+
 }

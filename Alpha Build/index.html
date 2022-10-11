@@ -16,11 +16,14 @@
       </h1>
       <!--<h2>Alpha Build</h2>-->
     </header>
+ <!-- <div id="slideshow">
+  <img src="imgs/ARTF-hands3.jpg" alt="Slide1" class="image" >
 
-
-    <div id="display">
+</div>   -->
+ 
+    <div id="display ">
       <div class="container center">
-        <img src="imgs/ARTF-hands3.jpg" alt="Slide1" class="image" >
+        <img src="imgs/ARTF-hands3.jpg" alt="Slide1" class="image responsive" >
         <div class="overlay">
           <div class="slideText">
             <p class="text">Drexel's Ongoing Work Toward Racial Equality And Inclusion<p>
@@ -29,7 +32,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
 
 
     <div id="mid-section"> <!--info section-->
@@ -47,7 +50,7 @@
         <section>
           <h3>Rules</h3>
           <h4>Frontend</h4>
-           <h5> Hover On Slideshow</h5>
+           <h5> Hover On Image</h5>
               <ul>
                 <li>Modal</li>
                   <ul>
@@ -74,7 +77,7 @@
                     <li>Ease in (in sync with modal) from the bottom of the image to top.</li>
                   </ul>
               </ul>
-            <h5>Hover Off Slideshow</h5>
+            <h5>Hover Off Image</h5>
             <ul>
               <li>Modal</li>
                 <ul>
@@ -101,31 +104,77 @@
                   <li>Ease out (in sync with modal) from the top of the image to the bottom</li>
                 </ul>
             </ul>
-          
-          <h4>Backend</h4>
-          <ul>
-            <li>
-              None
-            </li>
-          </ul>
         </section>
         <section>
           <h3>Feedback</h3>
-            <ul>
-              <li>Dark blue overlay with text and learn more button slides in with a nice fade from the bottom when hover on.</li>
-              <li>Dark blue overlay, text and learn more button fades and slides out from top to bottom when hover off. </li>
-            </ul>
+            <h4>Frontend</h4>
+            <h5> Hover On Image</h5>
+                <ul>
+                  <li>Modal</li>
+                    <ul>
+                      <li>color #000738 with Transparency 80% opacity </li>
+                      <li>Ease in from bottom to top with a transition-duration of 1.8s seconds</li>
+                      <li>Fades in with Opacity at 45% to 100% with an animation duration of 2 seconds</li>
+                    </ul>
+                  <li>Cursor</li>
+                    <ul>
+                      <li>Changes to Pointer</li>
+                    </ul>
+                  <li>Text</li>  
+                    <ul>
+                      <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned</li>
+                      <li>Fade in from Opacity 45% to 100% </li>
+                      <li>Ease in (in sync with modal) from the bottom of the image to top.</li>
+                    </ul>        
+                  <li>Learn more button </li>
+                    <ul>
+                      <li>Rectangle with border radius: 20px, style: solid, color: #ffffff</li>
+                      <li>Background-color of #ffc915</li>
+                      <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li>
+                      <li>Fade in from Opacity 45% to 100% </li>
+                      <li>Ease in (in sync with modal) from the bottom of the image to top.</li>
+                    </ul>
+                </ul>
+              <h5>Hover Off Image</h5>
+              <ul>
+                <li>Modal</li>
+                  <ul>
+                    <li>color #000738 with Transparency 80% opacity </li>
+                    <li>Ease out from top to bottom with a transition-duration of 1.8 seconds</li>
+                    <li>Fades out with Opacity at 100% to 0% with an animation duration of 1.8 seconds</li>
+                  </ul>
+                <li>Cursor</li>
+                  <ul>
+                    <li>Changes to Default</li>
+                  </ul>
+                <li>Text</li>  
+                  <ul>
+                    <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned</li>
+                    <li>Fade out from Opacity 100% to 0%</li>
+                    <li>Ease out (in sync with modal) from the top of the image to the bottom</li>
+                  </ul>        
+                <li>Learn more button </li>
+                  <ul>
+                    <li>Rectangle with border radius: 20px, style: solid, color: #ffffff</li>
+                    <li>Background-color of #ffc915</li>
+                    <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li>
+                    <li>Fade out from Opacity 100% to 0%</li>
+                    <li>Ease out (in sync with modal) from the top of the image to the bottom</li>
+                  </ul>
+              </ul>
         </section>
         <section>
           <h3>Loops/mode</h3>
           <ul>
-            <li>None</li>
+            <li> Event details fade in with a learn more button</li>
           </ul>
         </section>
       </div>
     </div>
 
     <footer>
+      <p class="footer-text">Footnote: Additional description for 'Learn More' button in Beta </p>
+      <p class="footer-text">Image Courtesy of Drexel University</p>
       <p>@Samiha Shoshi 2022</p>
     </footer>
   </body>
