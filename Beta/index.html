@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link href="styles.css" rel="stylesheet" >
+    <title>IDM241-Beta Description</title>
+  </head>
+  <body>
+    <header>
+      <h1> 
+        Microinteractions - IDM241
+      </h1>
+      <ul id="OGLinkContainer_ul">
+        <li id="OGLinkholder_li">
+          <a href="https://drexel.edu/equity-inclusive-culture/" id="OGLink_a">Visit Original Interface</a></li>
+      </ul>
+      <!-- <a class="button" style="position: center;"type="button" href="https://drexel.edu/equity-inclusive-culture/" target="_blank">
+        Visit Original Interface
+      </a> -->
+    </header>
+    
+    <div id="mid-section"> <!--info section-->
+      <h2>
+        Beta - Information
+      </h2>
+      <div id="info-content">
+        <!--Trigger List-->
+        <section>
+          <h3>Trigger</h3>
+          <ul>
+            <li>Hover On/Off Button </li>
+            <li>Click On/off Button </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Rules</h3>
+          <h4>Frontend</h4>
+           <h5> Hover Trigger</h5> 
+              <ul>
+                <li>Hover On Button</li>
+                <ul>
+                  <li><bold>Background color</bold> changes to #ffdf75 with a <bold>box-shadow </bold> of 3px along the bottom in #ffffffc5</li>
+                  <li><bold>Cursor</bold> changes from default to pointer</li>
+                  <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+                </ul>
+                <li>Hover Off Button</li>
+                <ul>
+                  <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold></li>
+                  <li><bold>Cursor</bold> changes from pointer to default</li>
+                  <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+                </ul>
+              </ul>
+            <h5> Click Trigger</h5> 
+              <ul>
+                <li>Click On Button</li>
+                <ul>
+                  <li><bold>Background color</bold> changes to #002f6c with a <bold>box-shadow </bold> of 5px along the bottom in #ffffffc5</li>
+                  <li><bold>Cursor</bold> changes from pointer to progress</li>
+                  <li>Button translates 11px down from original position.</li>
+                  <li>Leads to the image's learn more page</li>
+                  <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+                </ul>
+                <li>Click Off Button</li>
+                <ul>
+                  <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold> </li>
+                  <li><bold>Cursor</bold> changes from progress to pointer</li>
+                  <li>Button translates 11px up to original position.</li>
+                  <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+                </ul>
+              </ul>
+          <h4>Backend</h4>
+          <h5> Click On Button</h5> 
+            <ul>
+              <li>When clicked, system checks what link is connected to specific button. </li>
+              <li>Creates a 230ms delay between clicked button and page loading.</li>
+            </ul>
+        </section>
+        <section>
+          <h3>FeedBack</h3>
+          <h4>Frontend</h4>
+           <h5> Hover Trigger</h5> 
+              <ul>
+                <li>Hover On Button</li>
+                <ul>
+                  <li><bold>Background color</bold> changes to #ffdf75 with a <bold>box-shadow </bold> of 3px along the bottom in #ffffffc5</li>
+                  <li><bold>Cursor</bold> changes from default to pointer</li>
+                  <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+                </ul>
+                <li>Hover Off Button</li>
+                <ul>
+                  <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold></li>
+                  <li><bold>Cursor</bold> changes from pointer to default</li>
+                  <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+                </ul>
+              </ul>
+            <h5> Hover Trigger</h5> 
+              <ul>
+                <li>Click On Button</li>
+                <ul>
+                  <li><bold>Background color</bold> changes to #002f6c with a <bold>box-shadow </bold> of 5px along the bottom in #ffffffc5</li>
+                  <li><bold>Cursor</bold> changes from pointer to progress</li>
+                  <li>Button translates 11px down from original position.</li>
+                  <li>Leads to the image's learn more page</li>
+                  <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+                </ul>
+                <li>Click Off Button</li>
+                <ul>
+                  <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold> </li>
+                  <li><bold>Cursor</bold> changes from progress to pointer</li>
+                  <li>Button translates 11px up to original position.</li>
+                  <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+                </ul>
+              </ul>
+        </section>
+        <section>
+          <h3>Loops/mode</h3>
+          <ul>
+            <li> When button is clicked, Learn more page displays</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+
+    <div > <!---Images-->
+      <h2>Beta - Images</h2>
+      <div id="img_section">
+        <section>
+          <div id="img_content">
+            <img  src="imgs/beta_1.png" alt="screen 1" class="responsive">
+            <img  src="imgs/beta_2.png" alt="screen 2" class="responsive">
+            <img  src="imgs/beta_3.png" alt="screen 3" class="responsive">
+            <img  src="imgs/beta_4.png" alt="screen 4" class="responsive">
+            <img  src="imgs/beta_4.5.png" alt="screen 5" class="responsive">
+            <img  src="imgs/beta_5.png" alt="screen 6" class="responsive" >
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer-text">Image Courtesy of Drexel University</p>
+      <p>@Samiha Shoshi 2022</p>
+    </footer>
+  </body>
+</html>
