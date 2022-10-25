@@ -7,9 +7,9 @@
 
 
 /*general*/
- /* html{
+ html{
     display: flex;
-}  */
+}  
 
 body{
     background-color:white;
@@ -21,7 +21,9 @@ body{
 
 }
 
-/* For Visit Original Link Btn*/ 
+
+
+/* For Visit Original Link Btn
     .button{
         background-color: #002f6c;
         border-radius: 25px;
@@ -38,7 +40,7 @@ body{
         box-shadow: 0 3px #0118359a;
     }
 
-/*-------------------------------*/ 
+-------------------------------*/ 
 
 footer{
     font-size: 20px;
@@ -47,6 +49,12 @@ footer{
     text-align: center;
 
 }
+
+.footer-text{
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
 
 header{
     color:#002f6c;
@@ -94,29 +102,28 @@ section{
     border-radius: 10px;
     margin: 10px;
     padding: 4px 25px 8px;
+ 
     
 }
 
  #img_section{
-    display: grid;
+    /* display: flex; */
 
 } 
 
 #img_content{
     padding: 4px 25px 8px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
 }
 
 
-#img_content img{
-    margin: 5px 20px;
-    padding:15px;
+img{
+    /* margin: 5px 20px; */
+    padding: 25px;
     display: block;
-    
+     margin-left: auto;
+    margin-right: auto;
 }
-.responsive {
+ .responsive {
     width: 75%;
     height: auto;
   }
