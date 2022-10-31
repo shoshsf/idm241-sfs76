@@ -5,7 +5,6 @@
 <title>Beta</title>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="media.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -25,10 +24,9 @@
           <div class="overlay">
             <div class="slideText">
               <p class="text">Drexel's Ongoing Work Toward Racial Equality And Inclusion<p>
-                <button class="button" onclick="onBtnClickHandle1()">
-                  <!--  -->
-                  <span>Learn More</span>
-                </button>	<!--href="https://drexel.edu/equity-inclusive-culture/diversity/anti-racism-task-force/"-->
+                <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle1()">
+                  <span class="button__text">Learn More</span>
+              </button>	<!--href="https://drexel.edu/equity-inclusive-culture/diversity/anti-racism-task-force/"-->
             </div>
           </div>
         </div>
@@ -39,9 +37,9 @@
           <div class="overlay">
             <div class="slideText">
               <p class="text">Disability Is Part Of The Equity Equation<p>
-                <button class="button" onclick="onBtnClickHandle2()">
-                  <span>Learn More</span>
-                </button>	 <!--href="https://drexel.edu/disability-resources/support-accommodations/employee-resources/"-->
+                <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle2()">
+                  <span class="button__text">Learn More</span>
+              </button>	 <!--href="https://drexel.edu/disability-resources/support-accommodations/employee-resources/"-->
             </div>
           </div>
         </div>
@@ -53,9 +51,9 @@
           <div class="overlay">
             <div class="slideText">
               <p class="text">October Is Global Diversity Awareness Month<p>
-                <button class="button" onclick="onBtnClickHandle3()">
-                  <span>Learn More</span>
-                </button>	<!-- href="https://www.census.gov/newsroom/stories/diversity-awareness.html" -->
+                <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle3()">
+                  <span class="button__text">Learn More</span>
+              </button>	<!-- href="https://www.census.gov/newsroom/stories/diversity-awareness.html" -->
             </div>
           </div>
         </div>
@@ -67,9 +65,9 @@
           <div class="overlay">
             <div class="slideText">
               <p class="text">Browse DEI Event Recordings And Other Resources<p>
-                <button class="button" onclick="onBtnClickHandle4()">
-                  <span>Learn More</span>
-                </button>	 <!--  href="https://drexel.edu/equity-inclusive-culture/training/media/" -->
+                <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle4()">
+                  <span class="button__text">Learn More</span>
+              </button>	 <!--  href="https://drexel.edu/equity-inclusive-culture/training/media/" -->
             </div>
           </div>
         </div>
@@ -93,143 +91,111 @@
   <!--------------------->
  
 
-
-  <div id="mid-section"> <!--info section-->
-    <h2>
-      Alpha Build - Information
-    </h2>
-    <div id="info-content">
-      <!--Trigger List-->
-      <section>
-        <h3>Trigger</h3>
-        <ul>
-          <li>Hover On/Off Image </li>
-        </ul>
-      </section>
-      <section>
-        <h3>Rules</h3>
-        <h4>Frontend</h4>
-        <h5> Hover On Image</h5>
-            <ul>
-              <li>Modal</li>
-                <ul>
-                  <li>color #000738 with Transparency 80% opacity </li>
-                  <li>Ease in from bottom to top with a transition-duration of 1.8s seconds</li>
-                  <li>Fades in with Opacity at 45% to 100% with an animation duration of 2 seconds</li>
-                </ul>
-              <li>Cursor</li>
-                <ul>
-                  <li>Changes to Pointer</li>
-                </ul>
-              <li>Text</li>  
-                <ul>
-                  <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned</li>
-                  <li>Fade in from Opacity 45% to 100% </li>
-                  <li>Ease in (in sync with modal) from the bottom of the image to top.</li>
-                </ul>        
-              <li>Learn more button </li>
-                <ul>
-                  <li>Rectangle with border radius: 20px, style: solid, color: #ffffff</li>
-                  <li>Background-color of #ffc915</li>
-                  <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li>
-                  <li>Fade in from Opacity 45% to 100% </li>
-                  <li>Ease in (in sync with modal) from the bottom of the image to top.</li>
-                </ul>
-            </ul>
-          <h5>Hover Off Image</h5>
+<div id="mid-section"> <!--info section-->
+  <h2>
+    Beta - Information
+  </h2>
+  <div id="info-content">
+    <!--Trigger List-->
+    <section>
+      <h3>Trigger</h3>
+      <ul>
+        <li>Hover On/Off Button </li>
+        <li>Click On/off Button </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Rules</h3>
+      <h4>Frontend</h4>
+       <h5> Hover Trigger</h5> 
           <ul>
-            <li>Modal</li>
-              <ul>
-                <li>color #000738 with Transparency 80% opacity </li>
-                <li>Ease out from top to bottom with a transition-duration of 1.8 seconds</li>
-                <li>Fades out with Opacity at 100% to 0% with an animation duration of 1.8 seconds</li>
-              </ul>
-            <li>Cursor</li>
-              <ul>
-                <li>Changes to Default</li>
-              </ul>
-            <li>Text</li>  
-              <ul>
-                <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned</li>
-                <li>Fade out from Opacity 100% to 0%</li>
-                <li>Ease out (in sync with modal) from the top of the image to the bottom</li>
-              </ul>        
-            <li>Learn more button </li>
-              <ul>
-                <li>Rectangle with border radius: 20px, style: solid, color: #ffffff</li>
-                <li>Background-color of #ffc915</li>
-                <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li>
-                <li>Fade out from Opacity 100% to 0%</li>
-                <li>Ease out (in sync with modal) from the top of the image to the bottom</li>
-              </ul>
-          </ul>
-      </section>
-      <section>
-        <h3>Feedback</h3>
-          <h4>Frontend</h4>
-          <h5> Hover On Image</h5>
-              <ul>
-                <li>Modal</li>
-                  <ul>
-                    <li>color #000738 with Transparency 80% opacity </li>
-                    <li>Ease in from bottom to top with a transition-duration of 1.8s seconds</li>
-                    <li>Fades in with Opacity at 45% to 100% with an animation duration of 2 seconds</li>
-                  </ul>
-                <li>Cursor</li>
-                  <ul>
-                    <li>Changes to Pointer</li>
-                  </ul>
-                <li>Text</li>  
-                  <ul>
-                    <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned</li>
-                    <li>Fade in from Opacity 45% to 100% </li>
-                    <li>Ease in (in sync with modal) from the bottom of the image to top.</li>
-                  </ul>        
-                <li>Learn more button </li>
-                  <ul>
-                    <li>Rectangle with border radius: 20px, style: solid, color: #ffffff</li>
-                    <li>Background-color of #ffc915</li>
-                    <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li>
-                    <li>Fade in from Opacity 45% to 100% </li>
-                    <li>Ease in (in sync with modal) from the bottom of the image to top.</li>
-                  </ul>
-              </ul>
-            <h5>Hover Off Image</h5>
+            <li>Hover On Button</li>
             <ul>
-              <li>Modal</li>
-                <ul>
-                  <li>color #000738 with Transparency 80% opacity </li>
-                  <li>Ease out from top to bottom with a transition-duration of 1.8 seconds</li>
-                  <li>Fades out with Opacity at 100% to 0% with an animation duration of 1.8 seconds</li>
-                </ul>
-              <li>Cursor</li>
-                <ul>
-                  <li>Changes to Default</li>
-                </ul>
-              <li>Text</li>  
-                <ul>
-                  <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned</li>
-                  <li>Fade out from Opacity 100% to 0%</li>
-                  <li>Ease out (in sync with modal) from the top of the image to the bottom</li>
-                </ul>        
-              <li>Learn more button </li>
-                <ul>
-                  <li>Rectangle with border radius: 20px, style: solid, color: #ffffff</li>
-                  <li>Background-color of #ffc915</li>
-                  <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li>
-                  <li>Fade out from Opacity 100% to 0%</li>
-                  <li>Ease out (in sync with modal) from the top of the image to the bottom</li>
-                </ul>
+              <li><bold>Background color</bold> changes to #ffdf75 with a <bold>box-shadow </bold> of 3px along the bottom in #ffffffc5</li>
+              <li><bold>Cursor</bold> changes from default to pointer</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
             </ul>
-      </section>
-      <section>
-        <h3>Loops/mode</h3>
+            <li>Hover Off Button</li>
+            <ul>
+              <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold></li>
+              <li><bold>Cursor</bold> changes from pointer to default</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>
+          </ul>
+        <h5> Click Trigger</h5> 
+          <ul>
+            <li>Click On Button</li>
+            <ul>
+              <li><bold>Background color</bold> changes to #002f6c with a <bold>box-shadow </bold> of 5px along the bottom in #ffffffc5</li>
+              <li><bold>Cursor</bold> changes from pointer to progress</li>
+              <li>Button translates 11px down from original position.</li>
+              <li>Loading spinner quickly fades in, and rotates until new page loads</li>
+              <li>Opens the image's learn more page in new tab</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>
+            <li>Click Off Button</li>
+            <ul>
+              <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold> </li>
+              <li><bold>Cursor</bold> changes from progress to pointer</li>
+              <li>Button translates 11px up to original position.</li>
+              <li>Button text changes to a loading spinner that is rotating</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>
+          </ul>
+      <h4>Backend</h4>
+      <h5> Click On Button</h5> 
         <ul>
-          <li> Event details fade in with a learn more button</li>
+          <li>When clicked, system checks what link is connected to specific button. </li>
+          <li>Creates a 230ms delay between clicked button and page loading.</li>
         </ul>
-      </section>
-    </div>
+    </section>
+    <section>
+      <h3>FeedBack</h3>
+      <h4>Frontend</h4>
+       <h5> Hover Trigger</h5> 
+          <ul>
+            <li>Hover On Button</li>
+            <ul>
+              <li><bold>Background color</bold> changes to #ffdf75 with a <bold>box-shadow </bold> of 3px along the bottom in #ffffffc5</li>
+              <li><bold>Cursor</bold> changes from default to pointer</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>
+            <li>Hover Off Button</li>
+            <ul>
+              <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold></li>
+              <li><bold>Cursor</bold> changes from pointer to default</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>
+          </ul>
+        <h5> Click Trigger</h5> 
+          <ul>
+            <li>Click On Button</li>
+            <ul>
+              <li><bold>Background color</bold> changes to #002f6c with a <bold>box-shadow </bold> of 5px along the bottom in #ffffffc5</li>
+              <li><bold>Cursor</bold> changes from pointer to progress</li>
+              <li>Button translates 11px down from original position.</li>
+              <li>Loading spinner quickly fades in, and rotates until new page loads</li>
+              <li>Opens the image's learn more page in new tab</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>
+            <li>Click Off Button</li>
+            <ul>
+              <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold> </li>
+              <li><bold>Cursor</bold> changes from progress to pointer</li>
+              <li>Button translates 11px up to original position.</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>
+          </ul>
+    </section>
+    <section>
+      <h3>Loops/mode</h3>
+      <ul>
+        <li> When button is clicked, Learn more page displays in new tab</li>
+      </ul>
+    </section>
   </div>
+</div>
+
 
   <footer>
     <p class="footer-text">Footnote: Additional description for 'Learn More' button in Beta </p>

@@ -1,4 +1,6 @@
-
+*{
+   border: 1px red solid;
+}
 /*general*/
 
 body{
@@ -89,11 +91,10 @@ body{
       height: auto;
     }
   
-    #display{
+   #display{
       width: 880px;
       height: 400px; 
     }
-  
       
   /*Display specifics*/
     /* animation specifics*/
@@ -133,6 +134,11 @@ body{
     top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
+    margin-left: 60px;
+    margin-bottom: 30px;  /*need to decrease with media size*/
+    width: 80%;
+    height: auto;
+
   }
   .text{
       font-size: 35px;
@@ -142,38 +148,72 @@ body{
       letter-spacing: 5%;
       text-align: left;
   }
-
-  .button{
-      border-radius: 20px;
-      border-style: solid;
-      border-color: white;
-      background-color: #ffc915 ;
-      font-family: futura;
-      color: black;
-      font-size: 20px;
-      padding: 10px 30px;
-      line-height: 60px;
-      letter-spacing: 0.8px;
-      opacity: 100%;
-      text-decoration: none;
-
-  }
-
-  .button:hover{
-      background-color: #ffdf75;
-      box-shadow: 0 3px #ffffffc5;
+  
+.button {
+  position: relative;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+  background-color: #ffc915 ;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+ .button:hover{
+      background-color: #fce495;
+      box-shadow: 0 4px #ffffffd6;
       cursor: pointer;
-  }
+}
 
-  .button:active {
+.button:active {
     background-color:#002f6c;
     color:#ffc915; 
-     box-shadow:0px 5px #ffffffc5;
+    box-shadow:0px 5px #ffffffc5;
     transform: translateY(11px);
     cursor: progress;
+}
+
+.button__text {
+  font-family: futura;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  color: black;
+  transition: all 0.2s;
+}
+
+.button--loading .button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
   }
 
-          /*------------------*/
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+
+     /*------------------*/
    /*-----------------------------*/
    
   
