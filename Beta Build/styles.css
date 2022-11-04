@@ -148,7 +148,7 @@ body{
       letter-spacing: 5%;
       text-align: left;
   }
-  
+/*   
 .button {
   position: relative;
   border-radius: 20px;
@@ -198,7 +198,7 @@ body{
   border: 4px solid transparent;
   border-top-color: #ffffff;
   border-radius: 50%;
-  animation: button-loading-spinner 1s ease infinite;
+  animation: button-loading-spinner 1s ease;
 }
 
 @keyframes button-loading-spinner {
@@ -207,13 +207,182 @@ body{
   }
 
   to {
-    transform: rotate(1turn);
+    transform: rotate(2turn);
   }
 }
+ */
+
 
 
 
      /*------------------*/
+     .button_text1, .button_text2, .button_text3, .button_text4 {
+      font-family: futura;
+      font-size: 20px;
+      letter-spacing: 0.8px;
+      color: black;
+      transition: all 0.2s;
+    }
+
+     
+.button {
+  background-color: #ffc915;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white; 
+  font-family: futura;
+  color: black;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px 20px;
+  letter-spacing: 0.8px;
+}
+
+ .button:hover{
+      background-color: #ffdf75;
+      box-shadow: 0 3px #ffffffc5;
+      cursor: pointer;
+}
+
+.button:active {
+  background-color:#002f6c;
+  color:#ffc915; 
+  box-shadow:0px 5px #ffffffc5;
+  transform: translateY(11px);
+  cursor: progress;
+}
+
+@keyframes demoAnim {
+  /*   0%    { background-color: #2ecc71; }
+    20% { letter-spacing: 10px; }
+    20% { font-size: 30px; }
+    30%    { height: 45vh; }
+    100%  { background-color: black; } */
+    from {
+      transform: rotate(0turn);
+    }
+  
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+
+          .loading1 .button_text1 {
+            visibility: hidden;
+            opacity: 0;
+          }
+
+          .loading--anim1 {
+            content: "";
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+              top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 4px solid transparent;
+            border-top-color: black;
+            border-radius: 50%;
+            animation: demoAnim 2s linear;
+          }
+
+          .loading--anim1 {
+            animation: demoAnim 2s 1;
+          }
+
+            
+          /* ------------------------------------- */
+
+          .loading2 .button_text2 {
+            visibility: hidden;
+            opacity: 0;
+          }
+
+          .loading--anim2 {
+            content: "";
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+              top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 4px solid transparent;
+            border-top-color: black;
+            border-radius: 50%;
+            animation: demoAnim 2s linear;
+          }
+
+          .loading--anim2 {
+            animation: demoAnim 2s 1;
+          }
+
+
+          /* ------------------------------------- */
+
+          .loading3 .button_text3 {
+            visibility: hidden;
+            opacity: 0;
+          }
+
+          .loading--anim3 {
+            content: "";
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+              top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 4px solid transparent;
+            border-top-color: black;
+            border-radius: 50%;
+            animation: demoAnim 2s linear;
+          }
+
+          .loading--anim3 {
+            animation: demoAnim 2s 1;
+          }
+
+          /* ------------------------------------- */
+
+          .loading4 .button_text4 {
+            visibility: hidden;
+            opacity: 0;
+          }
+
+          .loading--anim4 {
+            content: "";
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+              top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 4px solid transparent;
+            border-top-color: black;
+            border-radius: 50%;
+            animation: demoAnim 2s linear;
+          }
+
+          .loading--anim4 {
+            animation: demoAnim 2s 1;
+          }
    /*-----------------------------*/
    
   

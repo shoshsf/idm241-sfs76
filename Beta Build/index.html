@@ -24,9 +24,16 @@
           <div class="overlay">
             <div class="slideText">
               <p class="text">Drexel's Ongoing Work Toward Racial Equality And Inclusion<p>
-                <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle1()">
+                <!-- <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle1()">
                   <span class="button__text">Learn More</span>
-              </button>	<!--href="https://drexel.edu/equity-inclusive-culture/diversity/anti-racism-task-force/"-->
+                </button>	 -->
+              <!--href="https://drexel.edu/equity-inclusive-culture/diversity/anti-racism-task-force/"-->
+              <div class="buttonDiv">
+                <button id="js-start-anim1" type="button" class="button ">
+                  <div class="button_text1">Learn More</div>
+                  <div class="loading1"></div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -37,9 +44,16 @@
           <div class="overlay">
             <div class="slideText">
               <p class="text">Disability Is Part Of The Equity Equation<p>
-                <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle2()">
+                <!-- <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle2()">
                   <span class="button__text">Learn More</span>
-              </button>	 <!--href="https://drexel.edu/disability-resources/support-accommodations/employee-resources/"-->
+              </button>	 -->
+               <!--href="https://drexel.edu/disability-resources/support-accommodations/employee-resources/"-->
+               <div>
+                <button id="js-start-anim2" type="button" class="button ">
+                  <div class="button_text2"> Learn More </div>
+                  <div class="loading2"></div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -50,10 +64,17 @@
           <img src="imgs/Global_Diversity.jpg"  class="image responsive" >
           <div class="overlay">
             <div class="slideText">
-              <p class="text">October Is Global Diversity Awareness Month<p>
-                <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle3()">
+              <p class="text">October Is Global Diversity Awareness Month</p>
+              <!-- <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle3()">
                   <span class="button__text">Learn More</span>
-              </button>	<!-- href="https://www.census.gov/newsroom/stories/diversity-awareness.html" -->
+              </button>	 -->
+              <!-- href="https://www.census.gov/newsroom/stories/diversity-awareness.html" -->
+              <div>
+                <button id="js-start-anim3" type="button" class="button ">
+                  <div class="button_text3"> Learn More </div>
+                  <div class="loading3"></div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -64,10 +85,17 @@
           <img src="imgs/OED-Media-Library.png"  class="image responsive" >
           <div class="overlay">
             <div class="slideText">
-              <p class="text">Browse DEI Event Recordings And Other Resources<p>
-                <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle4()">
+              <p class="text">Browse DEI Event Recordings And Other Resources</p>
+              <!-- <button type="button" class="button" onclick="this.classList.toggle('button--loading');onBtnClickHandle4()">
                   <span class="button__text">Learn More</span>
-              </button>	 <!--  href="https://drexel.edu/equity-inclusive-culture/training/media/" -->
+              </button> -->
+              <!--  href="https://drexel.edu/equity-inclusive-culture/training/media/" -->
+              <div>
+                <button id="js-start-anim4" type="button" class="button ">
+                  <div class="button_text4"> Learn More </div>
+                  <div class="loading4"></div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -129,7 +157,7 @@
               <li><bold>Background color</bold> changes to #002f6c with a <bold>box-shadow </bold> of 5px along the bottom in #ffffffc5</li>
               <li><bold>Cursor</bold> changes from pointer to progress</li>
               <li>Button translates 11px down from original position.</li>
-              <li>Loading spinner quickly fades in, and rotates until new page loads</li>
+              <li>Button increases in size, Loading spinner quickly fades in, and rotates until new page loads</li>
               <li>Opens the image's learn more page in new tab</li>
               <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
             </ul>
@@ -174,7 +202,7 @@
               <li><bold>Background color</bold> changes to #002f6c with a <bold>box-shadow </bold> of 5px along the bottom in #ffffffc5</li>
               <li><bold>Cursor</bold> changes from pointer to progress</li>
               <li>Button translates 11px down from original position.</li>
-              <li>Loading spinner quickly fades in, and rotates until new page loads</li>
+              <li>Button increases in size, Loading spinner quickly fades in, and rotates until new page loads</li>
               <li>Opens the image's learn more page in new tab</li>
               <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
             </ul>
@@ -192,6 +220,7 @@
       <ul>
         <li>when button is clicked, the button translates down and back up to represent pushing a button and then the loading spinner fades in quickly and rotates as new page is loading</li>
         <li> When button is clicked, Learn more page displays in new tab</li>
+        <li>When button is clicked, button increases in size and a loading spinner fades in and spins until new page loads. </li>
       </ul>
     </section>
   </div>
@@ -199,7 +228,7 @@
 
 
   <footer>
-    <p class="footer-text">Footnote: Additional description for 'Learn More' button in Beta </p>
+    <p class="footer-text">Footnote: Additional description for Slideshow Transition and Slide indicator in Final </p>
     <p class="footer-text">Image Courtesy of Drexel University</p>
     <p>@Samiha Shoshi 2022</p>
   </footer>
