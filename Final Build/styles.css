@@ -1,0 +1,424 @@
+/* *{
+   border: 1px red solid;
+} */
+/*general*/
+
+body{
+    background-color:white;
+    font-family: 'futura';
+    font-size: 15px;
+    font-style: normal;
+    letter-spacing: 5%;
+    padding: 0 20px;
+  
+  }
+  
+  footer{
+    font-size: 20px;
+    margin: 0 -15px;
+    padding: 8px 0 15px 0;
+    text-align: center;
+  
+  }
+  
+  header{
+    color:#002f6c;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  h1{
+    padding-bottom: 13px;
+  }
+  
+  h2{
+    
+    color: #002f6c;
+    font-size: 20px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  h4{
+    margin-left: 16px;
+  }
+  
+  h5{
+    margin-left: 24px;
+  }
+  
+  #info-section{
+    display: block;
+  }
+  
+  li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top:-10px;
+    padding-top: 15px;
+    line-height: 20px;
+  
+  }
+  
+  section{
+    border-color: #002f6c;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 4px 25px 8px;
+    
+  }
+  
+  /*For Image Display*/
+  
+  
+    /* to center display image */
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  
+    .container {
+      position: relative;
+      cursor: default;
+    }
+  
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+  
+   #display{
+      width: 880px;
+      height: 400px; 
+    }
+      
+  /*Display specifics*/
+    /* animation specifics*/
+        /*Fade in and out animation*/
+        @keyframes fade-in {
+          from {opacity: 45%}
+          to {opacity: 100%}
+        }
+        @keyframes fade-out {
+          from {opacity: 100%}
+          to {opacity: 0%}
+        }
+        /*--------------------------*/
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000738e8;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: 0.8s ease;
+        animation-name: fade-out;
+        animation-duration: 0.8s;
+      }
+  
+      .container:hover .overlay {
+        height: 100%;
+        cursor: default;
+        animation-name: fade-in;
+        animation-duration: 1s;
+      }
+        /*------------------*/     
+  .slideText {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    margin-left: 60px;
+    margin-bottom: 30px;  /*need to decrease with media size*/
+    width: 80%;
+    height: auto;
+
+  }
+  .text{
+      font-size: 35px;
+      font-family:'Futura Std Condensed Light';
+      color: #ffffff;
+      line-height: 60px;
+      letter-spacing: 5%;
+      text-align: left;
+  }
+/*   
+.button {
+  position: relative;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+  background-color: #ffc915 ;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+ .button:hover{
+      background-color: #fce495;
+      box-shadow: 0 4px #ffffffd6;
+      cursor: pointer;
+}
+
+.button:active {
+    background-color:#002f6c;
+    color:#ffc915; 
+    box-shadow:0px 5px #ffffffc5;
+    transform: translateY(11px);
+    cursor: progress;
+}
+
+.button__text {
+  font-family: futura;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  color: black;
+  transition: all 0.2s;
+}
+
+.button--loading .button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(2turn);
+  }
+}
+ */
+
+
+
+
+     /*------------------*/
+     .button_text1, .button_text2, .button_text3, .button_text4 {
+      font-family: futura;
+      font-size: 20px;
+      letter-spacing: 0.8px;
+      color: black;
+      transition: all 0.2s;
+    }
+
+     
+.button {
+  background-color: #ffc915;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white; 
+  font-family: futura;
+  color: black;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px 20px;
+  letter-spacing: 0.8px;
+}
+
+ .button:hover{
+      background-color: #ffdf75;
+      box-shadow: 0 3px #ffffffc5;
+      cursor: pointer;
+}
+
+.button:active {
+  background-color:#002f6c;
+  color:#ffc915; 
+  box-shadow:0px 5px #ffffffc5;
+  transform: translateY(11px);
+  cursor: progress;
+}
+
+@keyframes demoAnim {
+  /*   0%    { background-color: #2ecc71; }
+    20% { letter-spacing: 10px; }
+    20% { font-size: 30px; }
+    30%    { height: 45vh; }
+    100%  { background-color: black; } */
+    from {
+      transform: rotate(0turn);
+    }
+  
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+
+          .loading1 .button_text1 {
+            visibility: hidden;
+            opacity: 0;
+          }
+
+          .loading--anim1 {
+            content: "";
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+              top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 4px solid transparent;
+            border-top-color: black;
+            border-radius: 50%;
+            animation: demoAnim 2s linear;
+          }
+
+          .loading--anim1 {
+            animation: demoAnim 2s 1;
+          }
+
+            
+          /* ------------------------------------- */
+
+          .loading2 .button_text2 {
+            visibility: hidden;
+            opacity: 0;
+          }
+
+          .loading--anim2 {
+            content: "";
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+              top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 4px solid transparent;
+            border-top-color: black;
+            border-radius: 50%;
+            animation: demoAnim 2s linear;
+          }
+
+          .loading--anim2 {
+            animation: demoAnim 2s 1;
+          }
+
+
+          /* ------------------------------------- */
+
+          .loading3 .button_text3 {
+            visibility: hidden;
+            opacity: 0;
+          }
+
+          .loading--anim3 {
+            content: "";
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+              top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 4px solid transparent;
+            border-top-color: black;
+            border-radius: 50%;
+            animation: demoAnim 2s linear;
+          }
+
+          .loading--anim3 {
+            animation: demoAnim 2s 1;
+          }
+
+          /* ------------------------------------- */
+
+          .loading4 .button_text4 {
+            visibility: hidden;
+            opacity: 0;
+          }
+
+          .loading--anim4 {
+            content: "";
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+              top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 4px solid transparent;
+            border-top-color: black;
+            border-radius: 50%;
+            animation: demoAnim 2s linear;
+          }
+
+          .loading--anim4 {
+            animation: demoAnim 2s 1;
+          }
+   /*-----------------------------*/
+   
+   
+  /* The dots/bullets/indicators */
+
+
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    background-color: #000637;
+    border-radius: 50%;
+    border-color: #ffc915;
+    display: inline-block;
+    transition: background-color 0.9s ease-in;
+  }
+
+  .dot:hover{
+    background-color: #ffc915;
+  }
+  
+  .active {
+    border: 2px solid #000637; 
+
+    background-color: #ffc915;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .6 } 
+    to {opacity: 1}
+  }
+  

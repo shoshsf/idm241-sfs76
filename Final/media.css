@@ -1,0 +1,111 @@
+
+@media screen and (max-width: 1000px){
+
+    /* *{
+        border-width: 1px;
+        border-color: red;
+        border-style: solid;
+     } */
+    html{
+      display:flex;
+    }
+    
+    body{
+      display: block;
+    } 
+   h3{
+       font-size: 18px;
+   }
+   h4{
+    font-size: 16px;
+   }
+   h5{
+    font-size: 14px;
+   }
+   li{
+    font-size: 18px;
+    line-height: 25px;
+    }
+   section{
+       border-color: #002f6c;
+       border-width: 3px;
+       border-style: solid;
+       border-radius: 10px;
+       margin: 10px;
+       padding: 0 16px;  
+   }
+ 
+  .button{
+      border-radius: 18px;
+      border-style: solid;
+      border-color: white;
+      background-color: #ffc915;
+      font-family: futura;
+      color: black;
+      font-size: 20px;
+      padding: 10px 30px;
+      line-height: 40px;
+      letter-spacing: 0.8px;
+      opacity: 100%;
+      text-decoration: none;
+  }
+  
+  .button:hover{
+      background-color: #ffdf75;
+      box-shadow: 0 3px #ffffffc5;
+  }
+  } 
+/*-------------------------------------*/
+/*-----------New Media ----------------*/
+
+@media (max-width:685px) {
+  .button{
+    border-radius: 16px;
+    border-style: solid;
+    border-color: white;
+    background-color: #ffc915;
+    font-family: futura;
+    color: black;
+    font-size: 14px;
+    padding: 5px 15px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    opacity: 100%;
+    text-decoration: none;
+  }
+  
+  .button:hover{
+    background-color: #ffdf75;
+    box-shadow: 0 3px #ffffffc5;
+  }
+  
+  }
+
+
+/*-------------------------------------*/
+/*-----------New Media ----------------*/
+
+  
+  @media (max-width:675px) {
+
+  .button{
+    border-radius: 16px;
+    border-style: solid;
+    border-color: white;
+    background-color: #ffc915;
+    font-family: futura;
+    color: black;
+    font-size: 14px;
+    padding: 5px 15px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    opacity: 100%;
+    text-decoration: none;
+  }
+  
+  .button:hover{
+    background-color: #ffdf75;
+    box-shadow: 0 3px #ffffffc5;
+  }
+  
+}
