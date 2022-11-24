@@ -122,38 +122,168 @@
       <!--<a class="next" onclick="plusSlides(1)">❯</a> -->
   </div>
   <!---------------------->
+
+  
   <!--------------------->
  
-
   <div id="mid-section"> <!--info section-->
     <h2>
       Final - Information
     </h2>
     <div id="info-content">
-      <!---Final Desc Goes Here-->
-    </div>
-  </div>
+      <!--Trigger List-->
+      <section>
+        <h3>Triggers</h3>
+          <ul>
+            <li>Hover On/Off Slideshow</li>
+            <li>Hover On/Off Learn More Button </li>
+            <li>On Click Hold Learn More Button</li>
+            <li>On Click Release Learn More Button</li>
+            <li>Hover On/Off Dot Indicator </li>
+            <li>Click On Dot Indicator </li>
+          </ul>
+      </section>
+      <section>
+        <h3>Rules</h3>
+        <h4>Frontend</h4>
+          <h5> Hover On Slideshow </h5> 
+            <ul>
+              <li>Overlay color #000637 with Transparency from 75% to 90% transition-duration 3 seconds.</li>
+              <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned, transitions from bottom left at 55% Transparency to center left at 100% over a duration of 3 seconds. </li>
+              <li>Learn more button (shape: rectangle with 33% rounded edge, color:#FFC915, font-style: futura, light condense, black, font-size: 35, line-height: 60, letter-space: 5%)  transparency changes from 65% to 100% over 3 seconds with a white drop shadow (x:0, y:4, blur:4, spread:0, transparency:55%).  </li>
+              <li>Slide Number Indicator (shape: rectangle with 33% rounded edge; color:#000637; height: 29px; width:165px;) located at bottom right of slide with 5 #FFC915 colored 2px stroke circles center aligned, with one circle filled with #FFC915, indicating slide number. </li>
+            </ul>
+          <h5>Hover Off Slideshow</h5>
+            <ul>
+              <li>Overlay color #000637 with Transparency from 90% to 75% to 0% transition-duration between each percent is 3 .</li>
+              <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned, transitions from center left with a 100% tranparancy to 55% to 0% with a duration of 3 seconds between percents (synchronized with overlay transition) </li>
+              <li>Learn more button (shape: rectangle with 33% rounded edge, color: #FFC915, font-style: futura, light condense, black, font-size: 35, line-height: 60, letter-space: 5%)  transparency changes from 100% to 55% to 0% over 3 seconds between percents.  </li>
+            </ul>
+          <h5>Hover On Learn More Button</h5>
+            <ul>
+              <li><bold>Background color</bold> changes to #ffdf75 with a <bold>box-shadow </bold> of 3px along the bottom in #ffffffc5</li>
+              <li><bold>Cursor</bold> changes from default to pointer</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>
+          <h5>Hover Off Learn More Button</h5> 
+            <ul>
+              <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold></li>
+              <li><bold>Cursor</bold> changes from pointer to default</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>   
+          <h5>On Click Hold Learn More Button</h5>
+            <ul>
+              <li><bold>Background color</bold> changes to #002f6c with a <bold>box-shadow </bold> of 5px along the bottom in #ffffffc5</li>
+              <li><bold>Cursor</bold> changes from pointer to progress</li>
+              <li>Button translates 11px down from original position.</li>
+              <li>Button Text Color changes to #ffc915</li>
+              <li>Leads to the image's learn more page</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>
+          <h5>On Click Release Learn More Button</h5>
+            <ul>
+              <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold> </li>
+              <li><bold>Cursor</bold> changes from progress to pointer</li>
+              <li>Button translates 11px up to original position.</li>
+              <li>Button text changes to a loading spinner that is rotating</li>
+              <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+            </ul>
+          <h5>Hover On Dot Indicator</h5>
+            <ul>
+              <li>When hovering over dot indicators that are not linked to the current displayed slide, dot color will change with a fade from #000637 to #ffc915</li>
+              <li>Cursor changes from default to pointer</li>
+            </ul>
+          <h5>Hover Off Dot Indicator</h5>
+            <ul>
+              <li>When hovering off dot indicators that are not linked to the current displayed slide, dot color will change with a fade from #ffc915 to #000637 </li>
+              <li>Cursor changes from pointer to default</li>
+            </ul>
+          <h5>Click On Dot Indicator</h5>
+            <ul>
+              <li>The dot indicator that was clicked on will have a background color that changes to #ffc915 with a border of 2px solid #000637</li>
+              <li>The dot indicator that was previously selected will fade from a background color of #ffc915 to #000637</li>
+              <li>Loads the newly selected slide (based on the dot indicator that was clicked) with a fade from opacity 0.3 to 1 in 5 seconds</li>
+            </ul>       
+            
+        <h4>Backend</h4>
+          <ul>
+            <li>When Dot indicator is clicked, system checks and loads the slide (with the connected learn more link) that is connected or linked to that specific dot indicator.</li>
+            <li>After learn more button is cliCreates a delay between clicked Learn More button and new page loading in new window.</li>
+          </ul>
 
+      </section>
+      <section>
+        <h3>Feedback</h3>
+          <h4>Frontend</h4>
+            <h5> Hover On Slideshow </h5> 
+              <ul>
+                <li>Overlay color #000637 with Transparency from 75% to 90% transition-duration 3 seconds.</li>
+                <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned, transitions from bottom left at 55% Transparency to center left at 100% over a duration of 3 seconds. </li>
+                <li>Learn more button (shape: rectangle with 33% rounded edge, color:#FFC915, font-style: futura, light condense, black, font-size: 35, line-height: 60, letter-space: 5%)  transparency changes from 65% to 100% over 3 seconds with a white drop shadow (x:0, y:4, blur:4, spread:0, transparency:55%).  </li>
+                <li>Slide Number Indicator (shape: rectangle with 33% rounded edge; color:#000637; height: 29px; width:165px;) located at bottom right of slide with 5 #FFC915 colored 2px stroke circles center aligned, with one circle filled with #FFC915, indicating slide number. </li>
+              </ul>
+            <h5>Hover Off Slideshow</h5>
+              <ul>
+                <li>Overlay color #000637 with Transparency from 90% to 75% to 0% transition-duration between each percent is 3 .</li>
+                <li>Text font style Futura, Light Condense,color: #FFFFFF, font-size: 50, line-height: 60, letter-space: 5%, left-aligned, transitions from center left with a 100% tranparancy to 55% to 0% with a duration of 3 seconds between percents (synchronized with overlay transition) </li>
+                <li>Learn more button (shape: rectangle with 33% rounded edge, color: #FFC915, font-style: futura, light condense, black, font-size: 35, line-height: 60, letter-space: 5%)  transparency changes from 100% to 55% to 0% over 3 seconds between percents.  </li>
+              </ul>
+            <h5>Hover On Learn More Button</h5>
+              <ul>
+                <li><bold>Background color</bold> changes to #ffdf75 with a <bold>box-shadow </bold> of 3px along the bottom in #ffffffc5</li>
+                <li><bold>Cursor</bold> changes from default to pointer</li>
+                <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+              </ul>
+            <h5>Hover Off Learn More Button</h5> 
+              <ul>
+                <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold></li>
+                <li><bold>Cursor</bold> changes from pointer to default</li>
+                <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+              </ul>   
+            <h5>On Click Hold Learn More Button</h5>
+              <ul>
+                <li><bold>Background color</bold> changes to #002f6c with a <bold>box-shadow </bold> of 5px along the bottom in #ffffffc5</li>
+                <li><bold>Cursor</bold> changes from pointer to progress</li>
+                <li>Button translates 11px down from original position.</li>
+                <li>Button Text Color changes to #ffc915</li>
+                <li>Leads to the image's learn more page</li>
+                <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+              </ul>
+            <h5>On Click Release Learn More Button</h5>
+              <ul>
+                <li><bold>Background color</bold> changes to #ffc915 with no <bold>box-shadow </bold> </li>
+                <li><bold>Cursor</bold> changes from progress to pointer</li>
+                <li>Button translates 11px up to original position.</li>
+                <li>Button text changes to a loading spinner that is rotating</li>
+                <!-- <li>Font family: Futura, color: black, size: 20px, line-height: 60px, letter-spacing: 0.8px</li> -->
+              </ul>
+            <h5>Hover On Dot Indicator</h5>
+              <ul>
+                <li>When hovering over dot indicators that are not linked to the current displayed slide, dot color will change with a fade from #000637 to #ffc915</li>
+                <li>Cursor changes from default to pointer</li>
+              </ul>
+            <h5>Hover Off Dot Indicator</h5>
+              <ul>
+                <li>When hovering off dot indicators that are not linked to the current displayed slide, dot color will change with a fade from #ffc915 to #000637 </li>
+                <li>Cursor changes from pointer to default</li>
+              </ul>
+            <h5>Click On Dot Indicator</h5>
+              <ul>
+                <li>The dot indicator that was clicked on will have a background color that changes to #ffc915 with a border of 2px solid #000637</li>
+                <li>The dot indicator that was previously selected will fade from a background color of #ffc915 to #000637.</li>
+                <li>Loads the newly selected slide (based on the dot indicator that was clicked) with a fade from opacity 0.3 to 1 in 5 seconds</li>
+              </ul>       
+      </section>
+      <section>
+        <h3>Loops/mode</h3>
+        <ul>
+          <li>When learn more button is clicked, the linked Learn More page will display</li>
+          <li> When dot indicator is clicked, the slide linked to the dot indicator will display</li>
 
-  <!---Images
-  <div > 
-    <h2>Final - Images</h2>
-    <div id="img_section">
-      <section >
-        <div id="img_content" >
-          <img  src="imgs/beta_1.png" alt="screen 1" class=" responsive">
-          <img  src="imgs/beta_2.png" alt="screen 2" class=" responsive">
-          <img  src="imgs/beta_3.png" alt="screen 3" class=" responsive">
-          <img  src="imgs/beta_4.png" alt="screen 4" class="  responsive">
-          <img  src="imgs/beta_4.5.png" alt="screen 5" class="  responsive">
-          <img  src="imgs/beta_4.5a.png" alt="screen 6" class="  responsive">
-          <img  src="imgs/beta_5.png" alt="screen 7" class="  responsive" >
-        </div>
+        </ul>
       </section>
     </div>
   </div>
-  -->
-
 
   <footer>
     <p class="footer-text">Image Courtesy of Drexel University</p>
