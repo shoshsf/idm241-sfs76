@@ -1,0 +1,79 @@
+/* *{
+    border: 1px red solid;
+} */
+
+body{
+    background-color: #fffff4;
+    display: grid;
+    grid-template-columns: 0.5fr 2.3fr 0.5fr;
+    gap: 16px 0px;   
+}
+h1{
+    text-align: center;
+}
+h1,h2,h3,h4,h5{
+    font-family: futura;
+    color: #002f6c;
+}
+p{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    line-height: 32px;
+}
+ul{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    list-style-type:disc;
+}
+
+  
+  .header { grid-area: 1 / 2 / 2 / 3; }
+  
+  .heroImg {
+    grid-area: 2 / 1 / 2 / 4;
+    justify-self: center;
+    align-content: center;
+    width:70%;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overview { grid-area: 3 / 2 / 5 / 3; }
+  
+  .contextAndChallengeTitle { grid-area: 5 / 2 / 6 / 3 }
+  
+ 
+ .processAndInsightTitle { grid-area: 9 / 2 / 10 / 3; } 
+
+ .detailText{
+    border: 2px solid #002f6c;
+    /* background-color: #e0edffbc; */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+ }
+
+ .link{
+    text-decoration: 2px solid #002f6c underline;
+    font-weight: bold;
+    color:#002f6c;
+    transition: 0.6s;
+    padding: 10px 6px;
+ }
+
+ .link:hover{
+    color:#ffc815;
+    background-color: #002f6c;
+    text-decoration: 2px solid #ffc815 underline;
+    box-shadow: 0 0 10px  #242F36;
+    border-radius: 8px;
+
+ }
+
+
